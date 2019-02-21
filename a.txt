@@ -1,0 +1,62 @@
+PS C:\Users\susurana> Get-ScramCertificate
+
+
+   Subject: CN=Baltimore CyberTrust Root, OU=CyberTrust, O=Baltimore, C=IE
+
+Thumbprint                                FriendlyName              Not Before (local)        Not After (local)
+----------                                ------------              ------------------        -----------------
+D4DE20D05E66FC53FE1A50882C78DB2852CAE474                            5/13/2000 12:16:00 AM     5/13/2025 5:29:00 AM
+
+
+   Subject: CN=GTE CyberTrust Global Root, OU="GTE CyberTrust Solutions, Inc.", O=GTE Corporation, C=US
+
+Thumbprint                                FriendlyName              Not Before (local)        Not After (local)
+----------                                ------------              ------------------        -----------------
+97817950D81C9670CC34D809CF794431367EF474  GTE CyberTrust Global ... 8/13/1998 5:59:00 AM      8/14/2018 5:29:00 AM
+
+
+   Subject: CN=Microsoft Internal Corporate Root
+
+Thumbprint                                FriendlyName              Not Before (local)        Not After (local)
+----------                                ------------              ------------------        -----------------
+D17697CC206ED26E1A51F5BB96E9356D6D610B74                            4/6/2012 3:24:54 AM       4/6/2037 3:31:05 AM
+
+
+   Subject: CN=Microsoft Internet Authority
+
+Thumbprint                                FriendlyName              Not Before (local)        Not After (local)
+----------                                ------------              ------------------        -----------------
+992AD44D7DCE298DE17E6F2F56A7B9CAA41DB93F                            4/25/2012 11:11:36 PM     4/25/2020 11:10:55 PM
+E5958D48FE10D7340311E8C03BB22940DABA2DA3                            4/14/2010 11:42:26 PM     4/14/2018 11:42:14 PM
+
+
+   Subject: CN=Microsoft IT ITO SSL CA 1, OU=Microsoft IT, O=Microsoft Corporation, L=Redmond, S=Washington, C=US
+
+Thumbprint                                FriendlyName              Not Before (local)        Not After (local)
+----------                                ------------              ------------------        -----------------
+9F2857660D78C1FD395311613083820864755D42                            8/5/2014 9:51:50 PM       8/5/2018 10:01:50 PM
+3212246FA02C91A6B34FB98206FCF237AB812F1D                            3/26/2014 12:20:37 AM     3/26/2018 12:30:37 AM
+
+
+   Subject: CN=Microsoft Secure Server Authority, DC=redmond, DC=corp, DC=microsoft, DC=com
+
+Thumbprint                                FriendlyName              Not Before (local)        Not After (local)
+----------                                ------------              ------------------        -----------------
+3ADD0E7EA2B284FF459E137365B482D188DFBF8A                            5/20/2010 3:43:30 AM      5/20/2014 3:53:30 AM
+
+
+   Subject: CN=MSIT Machine Auth CA 2, DC=redmond, DC=corp, DC=microsoft, DC=com
+
+Thumbprint                                FriendlyName              Not Before (local)        Not After (local)
+----------                                ------------              ------------------        -----------------
+EF86B413F0FC25AC512B8BE9B6EC70F6DA341655                            5/16/2012 2:10:55 AM      5/16/2016 2:20:55 AM
+
+
+PS C:\Users\susurana> Get-ScramCertificate -Subject 'CN=NotificationClientBB' | Get-ScramAccessRule
+Get-ScramCertificate : A certificate with the identity 'Subject: CN=NotificationClientBB' was not found.
+At line:1 char:1
++ Get-ScramCertificate -Subject 'CN=NotificationClientBB' | Get-ScramAc ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceUnavailable: (System.Collecti...ficateIdentity]:List`1) [Get-ScramCertificate],
+   FaultException`1
+    + FullyQualifiedErrorId : FatalException,Microsoft.Ipo.Scram.Commands.GetScramCertificateCommand

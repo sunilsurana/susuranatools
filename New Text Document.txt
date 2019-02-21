@@ -1,0 +1,1 @@
+msiexec.exe /l*v BBStagingServer.msi.install.log /q /i E:\BB\BigButton\Install\distrib\install\x64\debug\devbigbutton\BBStagingServer.msi OTOOLSPATH=E:\BB\BigButton\private\otools DBSERVER=T09-OFFDB2-SQ DBNAME=bigbutton DBUSER=bb_reader DBPASSWORD=bb_reader SERVICEACCOUNTDOMAIN=FAREAST SERVICEACCOUNTNAME=susurana SERVICEPASSWORD=Rovi1965 NOTIFYENABLED=true
