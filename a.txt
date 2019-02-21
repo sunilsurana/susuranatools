@@ -1,3 +1,4 @@
+aaaaaaaaaa
 PS C:\Users\susurana> Get-ScramCertificate
 
 
